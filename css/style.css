@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+body {
+    background-color: #0f1c30 !important;
+}
+
+navbar{
+    background-color: #0f1c30;
+}
+
+.nav-link{
+    color: #c0d0ef !important;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.nav-link:hover{
+    color: #0f1c30 !important;
+    background-color: #c0d0ef;
+}
+
+.navbar-brand{
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #c0d0ef !important;
+    cursor: pointer;
+}
+
+.navbar-toggler{
+    background-color: #304a6e !important;
+    color: #c0d0ef !important;
+}
