@@ -5,34 +5,101 @@
 }
 
 body {
-    background-color: #0f1c30 !important;
+    background-color: #ddd !important;
 }
 
-navbar{
-    background-color: #0f1c30;
+nav{
+    background: #ddd;
 }
 
-.nav-link{
-    color: #c0d0ef !important;
+.navbar-logo{
+    display: inline-block;
+    vertical-align: middle;
+    width: 70px;
+  }
+
+.nav-link {
+    color: #333 !important;
     font-size: 1rem;
     font-weight: 700;
     cursor: pointer;
     text-decoration: none;
+    transition: all 100ms ease-in-out !important; /*transición final */
 }
 
-.nav-link:hover{
-    color: #0f1c30 !important;
-    background-color: #c0d0ef;
+.nav-link:hover {
+    color: #ddd !important;
+    background-color: #333;
+    scale: 1.2 !important;
+    transition-duration: 300ms; /*transición inicial */
+    transition-timing-function: ease-in !important;
 }
 
-.navbar-brand{
+.navbar-brand {
     font-size: 1.25rem;
     font-weight: 700;
-    color: #c0d0ef !important;
+    color: #333 !important;
     cursor: pointer;
 }
 
 .navbar-toggler{
-    background-color: #304a6e !important;
-    color: #c0d0ef !important;
+    background-color: #ddd !important;
+    color: #333 !important;
 }
+
+.title {
+    color: #333 !important;
+    position: relative !important;
+    font-size: 6rem !important;
+    display: inline !important;
+}
+
+.terminal-line {
+    width: 2rem !important;
+    height: 6rem !important;
+    background: #333 !important;
+    position: absolute;
+    right: -2rem !important;
+    animation: load 1s linear infinite;
+}
+
+.bg-img {
+    background-image: url(./img/yo.jpg);
+    width: 30vh;
+    background-size: cover;
+    background-position: right;
+    height: 30vh; /* Ajusta la altura como desees */
+    opacity: 90%;
+    border-radius: 50%;
+  }
+
+
+/* animacion linea de terminal */
+@keyframes load{
+    0%{
+        opacity: 0;
+    }
+    59%{
+        opacity: 0;
+    }
+    60%{
+        opacity: 100%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+
+
+/* quitar animaciones en caso de que se espeficique en el sistema */
+@media (prefers-reduced-motion: reduce){
+    .nav-link {
+        transition: none;
+    }
+}
+
+
+
+/* probar sticky */
+/*poner linea en el titulo como si fuera terminal */
+/* checar aspect-ratio para imágenes */
