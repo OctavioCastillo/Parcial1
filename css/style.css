@@ -47,6 +47,13 @@ nav{
     color: #333 !important;
 }
 
+/* hacer hero section del tamaño de la pantalla
+#hero{
+    min-height: 100vh;
+    min-width: 100vh;
+}
+*/
+
 .title {
     color: #333 !important;
     position: relative !important;
@@ -62,16 +69,6 @@ nav{
     right: -2rem !important;
     animation: load 1s linear infinite;
 }
-
-.bg-img {
-    background-image: url(./img/yo.jpg);
-    width: 30vh;
-    background-size: cover;
-    background-position: right;
-    height: 30vh; /* Ajusta la altura como desees */
-    opacity: 90%;
-    border-radius: 50%;
-  }
 
 
 /* animacion linea de terminal */
