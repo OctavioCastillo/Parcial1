@@ -5,11 +5,12 @@
 }
 
 body {
-    background-color: #ddd !important;
+    background-color: #060d1c !important;
+    margin: 0 !important;
 }
 
 nav{
-    background: #ddd;
+    background: #060d1c;
 }
 
 .navbar-logo{
@@ -18,8 +19,12 @@ nav{
     width: 70px;
   }
 
+.navbar{
+    border-bottom: 1px solid #06b0e2;
+}
+
 .nav-link {
-    color: #333 !important;
+    color: #e4ecf6 !important;
     font-size: 1rem;
     font-weight: 700;
     cursor: pointer;
@@ -28,8 +33,8 @@ nav{
 }
 
 .nav-link:hover {
-    color: #ddd !important;
-    background-color: #333;
+    color: #060d1c !important;
+    background-color: #e4ecf6;
     scale: 1.2 !important;
     transition-duration: 300ms; /*transición inicial */
     transition-timing-function: ease-in !important;
@@ -38,35 +43,51 @@ nav{
 .navbar-brand {
     font-size: 1.25rem;
     font-weight: 700;
-    color: #333 !important;
+    color: #e4ecf6 !important;
     cursor: pointer;
 }
 
 .navbar-toggler{
-    background-color: #ddd !important;
-    color: #333 !important;
+    background-color: #060d1c !important;
+    color: #e4ecf6 !important;
 }
 
-/* hacer hero section del tamaño de la pantalla
+/* hacer hero section del tamaño de la pantalla */
 #hero{
     min-height: 100vh;
     min-width: 100vh;
+    position: relative;
 }
-*/
+
+.center{
+    position: absolute !important;
+    inset: 0 !important;
+    margin: auto !important;
+}
+
 
 .title {
-    color: #333 !important;
+    color: #e4ecf6 !important;
     position: relative !important;
-    font-size: 6rem !important;
+    font-size: 5rem !important;
     display: inline !important;
 }
 
+.name-color{
+    background-image: linear-gradient(45deg, #06b0e2, #4282ec);
+    background-size: 100%;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+}
+
 .terminal-line {
-    width: 2rem !important;
-    height: 6rem !important;
-    background: #333 !important;
+    width: 2.5rem !important;
+    height: 5rem !important;
+    background: #4282ec !important;
     position: absolute;
-    right: -2rem !important;
+    right: -2.5rem !important;
     animation: load 1s linear infinite;
 }
 
