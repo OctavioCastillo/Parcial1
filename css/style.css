@@ -1,23 +1,19 @@
+/* 
+TODO
+---probar sticky 
+---poner linea en el titulo como si fuera terminal 
+---checar aspect-ratio para imágenes 
+*/
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: 0;
 }
 
-body {
-    background-color: #060d1c !important;
-    margin: 0 !important;
-}
-
 nav{
     background: #060d1c;
 }
-
-.navbar-logo{
-    display: inline-block;
-    vertical-align: middle;
-    width: 70px;
-  }
 
 .navbar{
     border-bottom: 1px solid #06b0e2;
@@ -34,14 +30,18 @@ nav{
 
 .nav-link:hover {
     color: #060d1c !important;
-    background-color: #e4ecf6;
+    background-color: #06b0e2;
     scale: 1.2 !important;
     transition-duration: 300ms; /*transición inicial */
     transition-timing-function: ease-in !important;
 }
 
+.nav-dot{
+    font-size: 1.8rem !important;
+}
+
 .navbar-brand {
-    font-size: 1.25rem;
+    font-size: 1.40rem;
     font-weight: 700;
     color: #e4ecf6 !important;
     cursor: pointer;
@@ -56,13 +56,7 @@ nav{
 #hero{
     min-height: 100vh;
     min-width: 100vh;
-    position: relative;
-}
-
-.center{
-    position: absolute !important;
-    inset: 0 !important;
-    margin: auto !important;
+    background-color: #060d1c !important;
 }
 
 
@@ -91,6 +85,10 @@ nav{
     animation: load 1s linear infinite;
 }
 
+#about{
+    background-color: #0f326a !important;
+}
+
 
 /* animacion linea de terminal */
 @keyframes load{
@@ -116,8 +114,3 @@ nav{
     }
 }
 
-
-
-/* probar sticky */
-/*poner linea en el titulo como si fuera terminal */
-/* checar aspect-ratio para imágenes */
