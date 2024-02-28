@@ -20,6 +20,18 @@ nav{
     border-bottom: 1px solid #06b0e2;
 }
 
+.navbar-dark .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;..") !important;
+}
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,102,203, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+  
+.custom-toggler.navbar-toggler {
+    border-color: rgb(255,102,203);
+} 
+
 .nav-link {
     color: #e4ecf6 !important;
     font-size: 1rem;
@@ -91,6 +103,39 @@ nav{
 
 .arrow-down{
     animation: bounce 1.5s ease-in-out 3s 3;
+    transition: all 100ms ease-in-out;
+}
+
+.arrow-down:hover{
+    transform: scale(1.2);
+    transition-duration: 200ms;
+    transition-timing-function: ease-in;
+}
+
+.btn-primary{
+    background: #06b0e2 !important;
+    transition: all 100ms ease-in-out;
+}
+
+.btn-primary:hover{
+    background: whitesmoke !important;
+    color: #06b0e2 !important;
+    transform: scale(1.1);
+    transition-duration: 200ms;
+    transition-timing-function: ease-in;
+}
+
+#proyectos{
+    color: whitesmoke !important;
+    background-color: #1B5CC3;
+}
+
+.card{
+    transition: all 300ms ease-in;
+}
+
+.card:hover{
+    transform: scale(1.1);
 }
 
 /* animacion linea de terminal */
