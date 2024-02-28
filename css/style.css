@@ -62,7 +62,7 @@ nav{
 .title {
     color: #e4ecf6 !important;
     position: relative !important;
-    font-size: 4.5rem !important;
+    font-size: 4rem !important;
     display: inline !important;
 }
 
@@ -76,8 +76,8 @@ nav{
 }
 
 .terminal-line {
-    width: 2.2rem !important;
-    height: 4.5rem !important;
+    width: 2rem !important;
+    height: 4rem !important;
     background: #4282ec !important;
     position: absolute;
     right: -2.5rem !important;
@@ -90,7 +90,7 @@ nav{
 }
 
 .arrow-down{
-    animation: bounce 1.5s ease-in-out 5s 3;
+    animation: bounce 1.5s ease-in-out 3s 3;
 }
 
 /* animacion linea de terminal */
