@@ -131,11 +131,17 @@ nav{
 }
 
 .card{
-    transition: all 300ms ease-in;
+    transition: all 300ms ease-in-out;
 }
 
 .card:hover{
-    transform: scale(1.1);
+    transform: scale(1.05);
+    transition-duration: 200ms;
+    transition-timing-function: ease-in;
+}
+
+.badge.bg-primary{
+    background-color: #06b0e2 !important;
 }
 
 /* animacion linea de terminal */
