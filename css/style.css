@@ -132,9 +132,11 @@ nav{
 
 .card{
     transition: all 300ms ease-in-out;
+    filter: grayscale(100%);
 }
 
 .card:hover{
+    filter: grayscale(0%);
     transform: scale(1.05);
     transition-duration: 200ms;
     transition-timing-function: ease-in;
@@ -142,6 +144,11 @@ nav{
 
 .badge.bg-primary{
     background-color: #06b0e2 !important;
+}
+
+#contacto{
+    background-color: #e4ecf6 !important;
+    color: #06b0e2 !important;
 }
 
 /* animacion linea de terminal */
@@ -173,3 +180,36 @@ nav{
     }
 }
 
+.form-control{
+    background-color: transparent !important;
+}
+
+
+.blob {
+    position: absolute;
+    width: 40rem;
+    height: 40rem;
+    background: linear-gradient(180deg, #c054eb, #ff3b9d 100%);
+    border-radius: 24% 76% 35% 65% / 27% 36% 64% 73%;
+    transform: translate(-100px, -50px) rotate(-90deg);
+    transition: 1s cubic-bezier(.07, .8, .16, 1);
+    animation: animateBlob 20s infinite alternate;
+}
+
+.blob:hover{
+    width: 520px;
+    height: 520px;
+    filter: blur(30px);
+    box-shadow: 
+        inset 0 0 0 5px rgba(255, 255, 255, .6),
+        inset 100px 100px 0 0 #41cce8,
+        inset 200px 200px 0 0 #52de9a,
+        inset 300px 300px 0 0 #8545ed;
+}
+
+@keyframes animateBlob {
+    100%{
+        transform: translate(25rem, 5rem) rotate(-10deg);
+        border-radius: 76% 24% 33% 67% / 68% 55% 45% 32%;
+    }    
+}
