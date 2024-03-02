@@ -213,3 +213,13 @@ nav{
         border-radius: 76% 24% 33% 67% / 68% 55% 45% 32%;
     }    
 }
+
+.container-content{
+    animation: fade-out linear;
+    animation-timeline: view();
+    animation-range: exit -50px;
+}
+
+@keyframes fade-out{
+    to {opacity: 0;}
+}
